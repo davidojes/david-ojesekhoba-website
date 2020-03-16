@@ -1,1 +1,0 @@
-# davidojes.github.io
