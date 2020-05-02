@@ -1,11 +1,255 @@
+
+
+:root {
+    --main-bg-color: #1C1B20;
+}
+
+.call-to-action, #summary, .navbar {
+    font-size: 1.3rem;
+}
+
+/* start styles */
+
+a {
+    text-decoration: none;
+    color: #50FF8C;
+}
+
 body {
-    background-color: #1C1B20;
+    background-color: var(--main-bg-color);
     /* color: #C4DBFF; */
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 16px 300px;
+}
+
+.call-to-action {
+    line-height: 1.5;
+    
+}
+
+.github-button {
+    background-color: #C4DBFF;
+}
+
+header {
+    padding: 0px;
+}
+
+#icons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+h2 {
+    /* color: #FA0D62; */
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 5px;
+    color: #50FF8C;
 }
 
 .logo {
-    height: 50px;
+    height: 75px;
+    width: 75px;
+    margin-right: 20px;
+}
+
+.navbar {
+    background-color: var(--main-bg-color);
+    display: flex;
+    /* padding: 16px 250px; */
+    /* padding: 10px 0px 20px; */
+    
+}
+
+.navbar-link {
+    padding-right: 8px;
+}
+
+.navbar-items {
+    display: flex;
+}
+
+.navbar-items-right {
+    margin-left: auto;
+}
+
+.navbar-link-toggle {
+    display: none;
+}
+
+.navbar-toggle-icon {
+    height: 25px;
     width: 50px;
+}
+
+
+.project-button {
+    padding: 15px 15px;
+    color: black;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #C4DBFF;
+    border-radius: 7.5px;
+    padding: 0px 15px 15px;
+}
+
+#projects-grid {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap: 50px;
+}
+
+#summary {
+    /* height: 60vw; */
+    /* font-size: 1.3rem; */
+    margin-bottom: 80px;
+    line-height: 1.5;
+}
+
+#summary-view-button {
+    color: black;
+    background-color: #50FF8C;
+    text-decoration: none;
+    padding: 17.5px 30px;
+    border-radius: 30px;
+}
+
+#summary-view-button-div {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.tags {
+    margin-top: 30px;
+}
+
+.tags span {
+    color: black;
+    background-color: gray;
+    padding: 7.5px 7.5px;
+    border-radius: 5px;
+}
+
+.view-button {
+    background-color: #50FF8C;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1500px) {
+    body {
+      padding: 16px 250px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        padding: 16px 150px;
+      }
+    
+    .project-card {
+        width: 80%;
+       
+    }
+
+    #projects-grid {
+        grid-template-columns: auto auto ;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 16px 50px;
+    }
+
+    #summary {
+        height: auto;
+        margin-bottom: 100px;
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 565px) {
+    .call-to-action, #summary, .navbar {
+        font-size: 1.1rem;
+    }
+
+    body {
+        padding: 16px 20px;
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    #projects-grid {
+        grid-template-columns: auto ;
+        grid-gap: 20px;
+    }
+
+    .project-card {
+        width: 90%; 
+    }
+
+    .project-button {
+        padding: 17.5px 15px;
+        width: 90%;
+    }
+
+    #summary {
+        height: auto;
+        margin-bottom: 100px;
+        /* font-size: 1.1rem; */
+        /* line-height: 1.5; */
+        margin-bottom: 60px;
+    }
+
+    #summary-view-button-div {
+        margin-top: 50px;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .navbar-items, .navbar {
+        flex-direction: column;
+    }
+    .navbar-items {
+        display: none;
+    }
+    .navbar-items-right {
+        margin-left: 0;
+    }
+    .navbar-link {
+        padding-bottom: 15px;
+    }
+    .navbar-toggleshow {
+        display: flex;
+    }
+    .navbar-link-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+    }
 }
