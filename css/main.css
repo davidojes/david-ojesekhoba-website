@@ -2,6 +2,7 @@
 
 :root {
     --main-bg-color: #1C1B20;
+    --main-blue: #A4C4F6;
 }
 
 .call-to-action, #summary, .navbar {
@@ -12,7 +13,7 @@
 
 a {
     text-decoration: none;
-    color: #50FF8C;
+    color: var(--main-blue);
 }
 
 body {
@@ -29,8 +30,12 @@ body {
     
 }
 
+#connect-with-me {
+    
+}
+
 .github-button {
-    background-color: #C4DBFF;
+    background-color: var(--main-blue);
 }
 
 header {
@@ -48,7 +53,7 @@ h2 {
     text-align: center;
     margin-bottom: 30px;
     padding-top: 5px;
-    color: #50FF8C;
+    color: var(--main-blue);
 }
 
 .logo {
@@ -60,6 +65,7 @@ h2 {
 .navbar {
     background-color: var(--main-bg-color);
     display: flex;
+    /* color: #50FF8C; */
     /* padding: 16px 250px; */
     /* padding: 10px 0px 20px; */
     
@@ -98,7 +104,7 @@ h2 {
 .project-card {
     display: flex;
     flex-direction: column;
-    border: 1px solid #C4DBFF;
+    border: 1px solid gray;
     border-radius: 7.5px;
     padding: 0px 15px 15px;
 }
@@ -109,10 +115,16 @@ h2 {
     grid-gap: 50px;
 }
 
+#projects-div {
+    margin-top: 90px;
+    margin-bottom: 90px;
+
+}
+
 #summary {
     /* height: 60vw; */
     /* font-size: 1.3rem; */
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
     line-height: 1.5;
 }
 
@@ -126,7 +138,7 @@ h2 {
 
 #summary-view-button-div {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .tags {
