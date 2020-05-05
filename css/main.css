@@ -73,15 +73,10 @@ h2 {
     
 }
 
-.navbar-link {
-    padding-right: 8px;
-}
+
 
 .navbar-items {
     display: flex;
-}
-
-.navbar-items-right {
     margin-left: auto;
 }
 
@@ -121,6 +116,10 @@ h2 {
     margin-top: 90px;
     margin-bottom: 90px;
 
+}
+
+.right-space {
+    padding-right: 60px;
 }
 
 #summary {
@@ -250,10 +249,9 @@ h2 {
     }
     .navbar-items {
         display: none;
-    }
-    .navbar-items-right {
         margin-left: 0;
     }
+
     .navbar-link {
         padding-bottom: 15px;
     }
