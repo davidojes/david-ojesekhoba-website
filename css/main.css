@@ -9,6 +9,11 @@
     font-size: 1.3rem;
 }
 
+.call-to-action, #summary {
+    line-height: 1.6;
+    
+}
+
 /* start styles */
 
 a {
@@ -18,28 +23,26 @@ a {
 
 body {
     background-color: var(--main-bg-color);
-    /* color: #C4DBFF; */
+    font-size: 1.2rem;
     color: white;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     padding: 16px 300px;
 }
 
-.call-to-action {
-    line-height: 1.5;
-    
-}
-
-#connect-with-me {
-    
-}
-
 .github-button {
     background-color: var(--main-blue);
 }
 
-header {
-    padding: 0px;
+h2 {
+    text-align: center;
+    padding-top: 5px;
+    color: var(--main-blue);
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
 }
 
 .icon {
@@ -54,23 +57,10 @@ header {
     margin-top: 10px;
 }
 
-h2 {
-    /* color: #FA0D62; */
-    text-align: center;
-    margin-bottom: 30px;
-    padding-top: 5px;
-    color: var(--main-blue);
-}
-
-
 
 .navbar {
     background-color: var(--main-bg-color);
     display: flex;
-    /* color: #50FF8C; */
-    /* padding: 16px 250px; */
-    /* padding: 10px 0px 20px; */
-    
 }
 
 
@@ -108,7 +98,7 @@ h2 {
 
 #projects-grid {
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto;
     grid-gap: 50px;
 }
 
@@ -122,28 +112,8 @@ h2 {
     padding-right: 60px;
 }
 
-#summary {
-    /* height: 60vw; */
-    /* font-size: 1.3rem; */
-    /* margin-bottom: 80px; */
-    line-height: 1.5;
-}
-
-#summary-view-button {
-    color: black;
-    background-color: #50FF8C;
-    text-decoration: none;
-    padding: 17.5px 30px;
-    border-radius: 30px;
-}
-
-#summary-view-button-div {
-    text-align: center;
-    margin-top: 50px;
-}
-
 .tags {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .tags span {
@@ -151,14 +121,14 @@ h2 {
     background-color: gray;
     padding: 7.5px 7.5px;
     border-radius: 5px;
+    display: inline-block;
+    margin-top: 5px;
 }
 
 .view-button {
     background-color: #50FF8C;
     margin-bottom: 10px;
 }
-
-
 
 
 
@@ -188,22 +158,27 @@ h2 {
     body {
         padding: 16px 50px;
     }
-
-    #summary {
-        height: auto;
-        margin-bottom: 100px;
-        font-size: 1.1rem;
-    }
 }
 
 @media only screen and (max-width: 565px) {
     .call-to-action, #summary, .navbar {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        text-align: center;
+        padding-top: 5px;
+        color: var(--main-blue);
+        font-size: 1.4rem;
+    }
+    
+    h3 {
+        font-size: 1.15rem;
     }
 
     body {
         padding: 16px 20px;
-        font-size: 0.9rem;
+        font-size: 1.15rem;
     }
 
     .icon {
@@ -225,17 +200,11 @@ h2 {
         width: 90%;
     }
 
-    #summary {
-        height: auto;
-        margin-bottom: 100px;
-        /* font-size: 1.1rem; */
-        /* line-height: 1.5; */
-        margin-bottom: 60px;
+    #projects-div {
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
-    #summary-view-button-div {
-        margin-top: 50px;
-    }
 }
 
 
